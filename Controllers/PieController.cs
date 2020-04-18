@@ -26,7 +26,7 @@ namespace SholasPie.Controllers
             piesListViewModel.Pies = _pieRepository.AllPies;
 
             piesListViewModel.CurrentCategory = "Cheese Cakes";
-            return View(_pieRepository.AllPies);
+            return View(piesListViewModel);
         }
     }
 }
