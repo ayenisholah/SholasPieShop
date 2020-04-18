@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SholasPie.Models;
+using SholasPie.Models.ViewModels;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -21,7 +22,10 @@ namespace SholasPie.Controllers
         }
         public ViewResult List()
         {
-            ViewBag.CurrentCategory = "Cheese cakes";
+            PiesListViewModel piesListViewModel = new PiesListViewModel();
+            piesListViewModel.Pies = _pieRepository.AllPies;
+
+            piesListViewModel.CurrentCategory = "Cheese Cakes";
             return View(_pieRepository.AllPies);
         }
     }
