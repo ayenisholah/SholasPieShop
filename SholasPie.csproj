@@ -10,5 +10,6 @@
     <Folder Include="Views\" />
     <Folder Include="Views\Pie\" />
     <Folder Include="Models\ViewModels\" />
+    <Folder Include="Views\Shared\" />
   </ItemGroup>
 </Project>

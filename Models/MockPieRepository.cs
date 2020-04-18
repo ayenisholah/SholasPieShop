@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using SholasPie.Models;
 
-namespace BethanysPieShop.Models
+namespace SholasPie.Models
 {
     public class MockPieRepository : IPieRepository
     {
